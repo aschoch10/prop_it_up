@@ -3,6 +3,14 @@ import React, { Component } from 'react';
 
 
 class PersonComponent extends Component{
+    constructor(props){
+        super(props);
+        console.log(props);
+        this.state ={
+            age : this.props.PersonComponent
+        }
+    }
+
     render(){
         return(
             <div>
