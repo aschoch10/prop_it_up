@@ -4,10 +4,10 @@ import './App.css';
 import PersonComponent from './components/PersonComponent';
 
 var peopleArr =[
-  {"firstName":"Steve", "lastName":"Jobs", "age":"65", "hairColor":"brown"},
-  {"firstName":"Johnny", "lastName":"Depp", "age":"54", "hairColor":"brown"},
-  {"firstName":"Bill", "lastName":"Gates", "age":"74", "hairColor":"grey"},
-  {"firstName":"Steve", "lastName":"Wozniak", "age":"70", "hairColor":"brown"}
+  {"firstName":"Steve", "lastName":"Jobs", "age":65, "hairColor":"brown"},
+  {"firstName":"Johnny", "lastName":"Depp", "age":54, "hairColor":"brown"},
+  {"firstName":"Bill", "lastName":"Gates", "age":74, "hairColor":"grey"},
+  {"firstName":"Steve", "lastName":"Wozniak", "age":70, "hairColor":"brown"}
 ]
 
 
