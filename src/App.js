@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 
+import PersonComponent from './components/PersonComponent';
+
+var peopleArr =[
+  {"firstName":"Steve", "lastName":"Jobs", "age":"65", "hairColor":"brown"},
+  {"firstName":"Johnny", "lastName":"Depp", "age":"54", "hairColor":"brown"},
+  {"firstName":"Bill", "lastName":"Gates", "age":"74", "hairColor":"grey"},
+  {"firstName":"Steve", "lastName":"Wozniak", "age":"70", "hairColor":"brown"}
+]
+
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {peopleArr.map(person => {
+          return <PersonComponent firstName={person.firstName} lastName={person.lastName} age = {person.age} hairColor={person.hairColor}/>
+        })}
     </div>
   );
 }
